@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary:      #3AAFA9;
+  --color-primary-dark: #2B8F8A;
+  --color-primary-light:#4DC5BF;
+  --color-primary-bg:   #EBF7F7;
+  --color-primary-text: #2B8F8A;
+  --color-accent:       #5ECAC5;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-charcoal font-sans antialiased;
+  }
+}
+
+/* Theme-aware utility classes */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+.text-theme { color: var(--color-primary-text); }
+.bg-theme   { background-color: var(--color-primary); }
+.bg-theme-bg { background-color: var(--color-primary-bg); }
+.border-theme { border-color: var(--color-primary); }
+
+@layer utilities {
+  .clip-cut {
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  }
+  .clip-cut-sm {
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  }
+}
+
+/* Supabase Realtime chat scrollbar */
+.chat-scroll::-webkit-scrollbar { width: 4px; }
+.chat-scroll::-webkit-scrollbar-thumb { background: #D8DCE0; border-radius: 2px; }

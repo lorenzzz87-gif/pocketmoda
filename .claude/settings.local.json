@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__visualize__show_widget",
+      "Bash(mkdir -p \"/Users/haozhou/Claude code 1/PocketModa/.claude\")",
+      "mcp__Claude_in_Chrome__navigate"
+    ]
+  }
+}
