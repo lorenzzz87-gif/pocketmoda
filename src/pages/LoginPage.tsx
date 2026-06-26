@@ -58,7 +58,7 @@ export function LoginPage() {
         {/* Logo */}
         <div className="text-center space-y-3">
           <div className="flex justify-center">
-            <Logo size={56} showWordmark={false} />
+            <Logo size={90} showWordmark={false} />
           </div>
           <div>
             <p style={{ fontFamily:"'Arial',sans-serif", fontSize:'11px', letterSpacing:'7px', color:'#3AAFA9', textTransform:'uppercase', marginBottom:'2px' }}>pocket</p>
