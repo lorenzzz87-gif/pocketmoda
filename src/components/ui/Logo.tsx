@@ -15,7 +15,7 @@ export function Logo({ size = 32, showWordmark = true, light = false }: LogoProp
         alt="PocketModa"
         width={size}
         height={size}
-        style={{ objectFit: 'contain', flexShrink: 0, mixBlendMode: 'multiply' }}
+        style={{ objectFit: 'contain', flexShrink: 0 }}
       />
       {showWordmark && (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1 }}>
