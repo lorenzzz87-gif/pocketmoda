@@ -56,11 +56,14 @@ export function LoginPage() {
 
       <div className="relative z-10 w-full max-w-sm space-y-7">
         {/* Logo */}
-        <div className="text-center space-y-2">
+        <div className="text-center space-y-3">
           <div className="flex justify-center">
-            <Logo size={48} showWordmark={false} color="#3AAFA9" />
+            <Logo size={56} showWordmark={false} />
           </div>
-          <h1 className="text-2xl font-semibold text-charcoal tracking-tight">PocketModa</h1>
+          <div>
+            <p style={{ fontFamily:"'Arial',sans-serif", fontSize:'11px', letterSpacing:'7px', color:'#3AAFA9', textTransform:'uppercase', marginBottom:'2px' }}>pocket</p>
+            <h1 style={{ fontFamily:"'Georgia','Palatino',serif", fontSize:'32px', fontWeight:700, color:'#1E2325', letterSpacing:'-0.5px', margin:0, lineHeight:1 }}>Moda</h1>
+          </div>
           <p className="text-xs text-silver-600">Italian Fashion · B2B Wholesale Platform</p>
         </div>
 

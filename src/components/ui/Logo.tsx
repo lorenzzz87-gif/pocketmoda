@@ -15,15 +15,27 @@ export function Logo({ size = 32, showWordmark = true, light = false }: LogoProp
         alt="PocketModa"
         width={size}
         height={size}
-        style={{ objectFit: 'contain', flexShrink: 0 }}
+        style={{ objectFit: 'contain', flexShrink: 0, mixBlendMode: 'multiply' }}
       />
       {showWordmark && (
-        <span
-          style={{ color: textColor }}
-          className="text-lg font-semibold tracking-tight leading-none"
-        >
-          Pocket<span className="font-light">moda</span>
-        </span>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1 }}>
+          <span style={{
+            fontFamily: "'Arial', sans-serif",
+            fontSize: '11px',
+            letterSpacing: '6px',
+            color: '#3AAFA9',
+            textTransform: 'uppercase',
+            fontWeight: 400,
+          }}>pocket</span>
+          <span style={{
+            fontFamily: "'Georgia', 'Palatino', serif",
+            fontSize: '20px',
+            fontWeight: 700,
+            color: light ? '#fff' : '#1E2325',
+            letterSpacing: '-0.5px',
+            marginTop: '-1px',
+          }}>Moda</span>
+        </div>
       )}
     </div>
   )
